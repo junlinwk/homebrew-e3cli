@@ -2,8 +2,8 @@ class E3cli < Formula
   include Language::Python::Virtualenv
 
   desc "NYCU E3 Moodle automation CLI — sync courses, download materials, submit assignments"
-  homepage "https://github.com/user/e3cli"
-  url "https://github.com/user/e3cli/archive/refs/tags/v0.1.0.tar.gz"
+  homepage "https://github.com/junlinwk/e3cli"
+  url "https://github.com/junlinwk/e3cli/archive/refs/tags/v0.1.0.tar.gz"
   sha256 "7aa0147a0301b7fcd69502689cece3d648dc19f2ce6025b131b325b31300367a"
   license "MIT"
 
