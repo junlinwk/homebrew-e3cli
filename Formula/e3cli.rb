@@ -3,8 +3,8 @@ class E3cli < Formula
 
   desc "NYCU E3 Moodle automation CLI — sync courses, download materials, submit assignments"
   homepage "https://github.com/junlinwk/e3cli"
-  url "https://github.com/junlinwk/e3cli/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "5927f5eadaff79aa76252b94c4ce2683a035b0bb2c94a401eb9d9f3199e6827f"
+  url "https://github.com/junlinwk/e3cli/archive/refs/tags/v0.4.1.tar.gz"
+  sha256 "f1e7c0ed215d0c0a74d3724fb03703cf86b6c8c8e91d48cdccf07b44e158640a"
   license "MIT"
 
   depends_on "python@3.12"
