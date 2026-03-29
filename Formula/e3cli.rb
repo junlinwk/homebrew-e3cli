@@ -3,8 +3,8 @@ class E3cli < Formula
 
   desc "NYCU E3 Moodle automation CLI — sync courses, download materials, submit assignments"
   homepage "https://github.com/junlinwk/e3cli"
-  url "https://github.com/junlinwk/e3cli/archive/refs/tags/v0.7.2.tar.gz"
-  sha256 "4729ab980583a40a99d6dd9bc1d20ff1b9082c7c77f6a0835ac46d3d8a197fb3"
+  url "https://github.com/junlinwk/e3cli/archive/refs/tags/v0.7.3.tar.gz"
+  sha256 "f0eb12ddc80f192163348b9ac2d96d06b679787e18811fe7f71f35163a4c9416"
   license "MIT"
 
   depends_on "python@3.12"
@@ -65,8 +65,8 @@ class E3cli < Formula
   end
 
   resource "pygments" do
-    url "https://files.pythonhosted.org/packages/b0/77/a5b8c569bf593b0140bde72ea885a803b82086995367bf2037de0159d924/pygments-2.19.2.tar.gz"
-    sha256 "636cb2477cec7f8952536970bc533bc43743542f70392ae026374600add5b887"
+    url "https://files.pythonhosted.org/packages/c3/b2/bc9c9196916376152d655522fdcebac55e66de6603a76a02bca1b6414f6c/pygments-2.20.0.tar.gz"
+    sha256 "6757cd03768053ff99f3039c1a36d6c0aa0b263438fcab17520b30a303a82b5f"
   end
 
   resource "colorama" do
