@@ -3,8 +3,8 @@ class E3cli < Formula
 
   desc "NYCU E3 Moodle automation CLI — sync courses, download materials, submit assignments"
   homepage "https://github.com/junlinwk/e3cli"
-  url "https://files.pythonhosted.org/packages/f1/63/578945b1a8b9834938685ab42544b4b6fe71ba3c960e269d8295ceff680e/e3cli-1.0.5-py3-none-any.whl"
-  sha256 "94e68a818643e53b20bc00bcf0211ab3034319b2a5a0cd6b811e7bbd535aceb9"
+  url "https://files.pythonhosted.org/packages/51/9e/6080c1995383e95ae104c19473b5b10e23ccb46b13fbabd4c41394258849/e3cli-1.0.6-py3-none-any.whl"
+  sha256 "3e7b88fc8feb02506e25f5f5c429e063c359ba9c86bef0e9dbcc2defcbbee8f2"
   license "MIT"
 
   depends_on "python@3.12"
@@ -82,7 +82,9 @@ class E3cli < Formula
   def install
     venv = virtualenv_create(libexec, "python3.12")
     venv.pip_install resources
-    venv.pip_install_and_link cached_download
+    wheel = buildpath/"e3cli-#{version}-py3-none-any.whl"
+    cp cached_download, wheel
+    venv.pip_install_and_link wheel
   end
 
   test do
